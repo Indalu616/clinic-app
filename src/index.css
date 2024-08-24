@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+NO:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Potta+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sedan:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* ------------------NAVBAR------------------ */
+.navbar-bg {
+  background-color: #eff8ff !important;
+}
+/* ------------------HERO------------------ */
+.dental-experience {
+  color: #1e84b5;
+  font-weight: 700 !important;
+}
+.service-time {
+  background-color: #0e384c;
+  width: 100%;
+}
+.text-color {
+  color: #5272a2 !important;
+}
+.hero-h1 {
+  color: #0e384c !important;
+  font-size: 3.375rem !important;
+  font-weight: 700;
+}
+.timing {
+  font-size: 1rem;
+}
+@media (max-width: 48rem) {
+  .hero-h1 {
+    font-size: 2.375rem !important;
+    text-align: center;
+  }
+}
+/* ------------------ABOUT-US */
+.about-h3 {
+  font-size: 0.875rem;
+  color: #54a1c7 !important;
+}
+.about-h1 {
+  color: #0e384c !important;
+  font-size: 1.75rem !important;
+  font-weight: 700;
+}
+.about-span {
+  color: #1e84b5 !important;
+}
+.about-text-color {
+  color: #5d7282;
+}
+.service-list {
+  color: #0e384c !important;
+  font-weight: 700 !important;
+}
+.check-box {
+  color: #1e84b5 !important;
+}
+@media (max-width: 48rem) {
+  .about-p-center {
+    text-align: center !important;
+  }
+}
+/* --------------------SERVICES------------ */
+
+.service-item {
+  background-color: white;
+  border-radius: 1.25rem;
+  position: relative;
+  z-index: 4;
+}
+.service-h4 {
+  font-size: 1.15rem;
+  color: #0e384c;
+  font-weight: 700;
+}
+.over-lay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #0e384c;
+  border-radius: 1.25rem;
+  transition: all 0.35s;
+}
+.service-item:hover .service-description {
+  color: white;
+}
+.service-item:hover .service-h4 {
+  color: white;
+}
+.service-item:hover .over-lay {
+  animation-name: ani;
+  animation-timing-function: linear;
+  animation-duration: 0.3s;
+  animation-fill-mode: forwards;
+}
+.visit-clinic {
+  position: relative;
+  background: linear-gradient(rgba(8, 0, 58, 0.7), rgba(8, 0, 58, 0.7)),
+    url(../src/Images/inside-clinic.jpeg);
+  border-radius: 1.25rem;
+  z-index: 4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
+@keyframes ani {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+/* -------------------ACHIEVEMENT----------- */
+
+.achieve-h1 {
+  background: linear-gradient(45deg, #662d8c, #ed1e79);
+  -webkit-background-clip: text;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
+.achieve-h4 {
+  font-size: 1.25rem;
+  color: #54a1c7 !important;
+}
+/* ----------------TEAMS-SECTION--------------- */
+.image-holder img {
+  transition: all 0.35s;
+}
+.image-holder:hover img {
+  transform: scale(1.05);
+}
+.image-card {
+  position: relative;
+}
+.social-media {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1.25rem;
+  opacity: 0;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+.social-media i:hover {
+  background-color: #1e84b5 !important;
+}
+.image-holder:hover .social-media {
+  opacity: 1;
+}
