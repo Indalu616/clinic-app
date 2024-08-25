@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/clinic-app/static/css/main.381a3252.css",
-    "main.js": "/clinic-app/static/js/main.4c14b7ff.js",
+    "main.js": "/clinic-app/static/js/main.5ed7e169.js",
     "static/js/453.7a37df77.chunk.js": "/clinic-app/static/js/453.7a37df77.chunk.js",
     "static/media/doctor-hero-bg.png": "/clinic-app/static/media/doctor-hero-bg.f0d59a5c265bc5cf67c4.png",
     "static/media/blog3.jpeg": "/clinic-app/static/media/blog3.37315c50d2fefec663dc.jpeg",
@@ -20,7 +20,6 @@
     "static/media/pro-3.jpeg": "/clinic-app/static/media/pro-3.4083cc1de0accd62da1f.jpeg",
     "static/media/pro-4.jpeg": "/clinic-app/static/media/pro-4.e509cc6d4cae819570b8.jpeg",
     "static/media/big-teeth.png": "/clinic-app/static/media/big-teeth.62ed37dcf2e266f6e2b2.png",
-    "static/media/map.webp": "/clinic-app/static/media/map.12bf2602cce5ef615bd9.webp",
     "static/media/img-2.svg": "/clinic-app/static/media/img-2.ad9e18e34a8d90f0b79bb62e481edaea.svg",
     "static/media/t2.jpeg": "/clinic-app/static/media/t2.3e8437da85efdc256ccd.jpeg",
     "static/media/positive.svg": "/clinic-app/static/media/positive.7a68f926e6dbdb5e9e1707a5acafd9fa.svg",
@@ -42,11 +41,11 @@
     "static/media/appoint.svg": "/clinic-app/static/media/appoint.c3e578daf25eb21d54458a3b492902f8.svg",
     "index.html": "/clinic-app/index.html",
     "main.381a3252.css.map": "/clinic-app/static/css/main.381a3252.css.map",
-    "main.4c14b7ff.js.map": "/clinic-app/static/js/main.4c14b7ff.js.map",
+    "main.5ed7e169.js.map": "/clinic-app/static/js/main.5ed7e169.js.map",
     "453.7a37df77.chunk.js.map": "/clinic-app/static/js/453.7a37df77.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.381a3252.css",
-    "static/js/main.4c14b7ff.js"
+    "static/js/main.5ed7e169.js"
   ]
 }
