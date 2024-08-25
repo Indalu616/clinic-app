@@ -1,31 +1,20 @@
-import React, { useEffect, useRef } from "react";
-import { API_KEY } from "./Secret";
+import React from "react";
+import map from "../Images/map.webp";
 function Contacts() {
-  const myMap = useRef(null);
-  useEffect(() => {
-    myMap.current.src = `https://www.google.com/maps/embed/v1/place?key=${API_KEY}
-    &q=Space+Needle,Seattle+WA`;
-  }, [myMap]);
   return (
     <section className="py-5" id="contact">
       <div className="container">
         <div className="row">
           <div className="col-md-6 p-4">
             <div className="map" style={{ height: "100%" }}>
-              <iframe
-                ref={myMap}
-                className="rounded"
-                title="Our clinic location"
+              <img
+                src={map}
+                alt="map"
                 style={{
                   width: "100%",
                   height: "100%",
-                  border: "1",
-                  loading: "lazy",
                 }}
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade"
-                src=""
-              ></iframe>
+              ></img>
             </div>
           </div>
           <div className="col-md-6 mt-5">
