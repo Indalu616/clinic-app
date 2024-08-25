@@ -1,5 +1,6 @@
 import React from "react";
 import { ServiceList } from "./ServicesList";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
@@ -26,7 +27,7 @@ function Services() {
                   <p className="mb-4 about-text-color service-description">
                     {service.description}
                   </p>
-                  <button className="btn btn-primary rounded">Read More</button>
+                  <button className="btn btn-primary rounded"><Link to="/clinic-app/services" style={{textDecoration:"none",color:"white"}}>Read More</Link></button>
                   <div className="over-lay"></div>
                 </div>
               </div>

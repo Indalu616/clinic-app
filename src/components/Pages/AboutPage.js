@@ -22,7 +22,8 @@ function AboutPage() {
           <p className="about-text-color text-center">
             <Link to="/clinic-app" style={{ textDecoration: "none" }}>
               Home
-            </Link> / About Us
+            </Link>
+            / About Us
           </p>
         </div>
       </section>
@@ -30,24 +31,26 @@ function AboutPage() {
       <section className="py-5" style={{ backgroundColor: "#EFF8FF" }}>
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
-              <h2 className="service-h4 text-center">
+            <div className="col-md-6">
+              <h2 className="service-h4 text-center mb-4">
                 Trusted by the industry's leading insurance provider
               </h2>
             </div>
-            <div className="col-md-7">
-              <Carousel>
+            <div className="col-md-6 mb-4">
+              <Carousel controls={false} indicators={false}>
                 <Carousel.Item>
-                  <div className="row">
-                    <div className="col">
-                      <img src={img1} alt="image-one"></img>
-                    </div>
-                    <div className="col">
-                      <img src={img2} alt="image-two"></img>
-                    </div>
-                    <div className="col">
-                      <img src={img3} alt="image-three"></img>
-                    </div>
+                  <div className="text-center">
+                    <img src={img1} alt="Image-one"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={img2} alt="Image-one"></img>
+                  </div>
+                </Carousel.Item>
+                <Carousel.Item>
+                  <div className="text-center">
+                    <img src={img3} alt="Image-one"></img>
                   </div>
                 </Carousel.Item>
               </Carousel>
