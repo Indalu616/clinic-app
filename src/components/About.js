@@ -1,5 +1,6 @@
 import React from "react";
 import doctor_treating_patient from "../Images/doctor-patient.jpeg";
+import { Link } from "react-router-dom";
 function About() {
   return (
     <section id="about">
@@ -47,7 +48,7 @@ function About() {
               </div>
             </div>
             <div className="about-p-center mt-4">
-              <button className="btn btn-primary">Read More About Us</button>
+              <button className="btn btn-primary"><Link to="/clinic-app/about" style={{textDecoration:"none"}} className="text-white">Read More About Us</Link></button>
             </div>
           </div>
         </div>

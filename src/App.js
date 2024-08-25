@@ -1,37 +1,19 @@
-import About from "./components/About";
-import Achievements from "./components/Achievements";
-import Blogs from "./components/Blogs";
-import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import HowWork from "./components/HowWork";
-import NavbarApp from "./components/NavbarApp";
-import Services from "./components/Services";
-import Team from "./components/Team";
-import Testimonial from "./components/Testimonial";
-import WhyChoose from "./components/WhyChoose";
-
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home";
+import AboutPage from "./components/Pages/AboutPage";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function App() {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  });
   return (
     <div className="App">
-      <header>
-        <NavbarApp />
-        <Hero />
-      </header>
-      <main>
-        <About />
-        <Services />
-        <Achievements />
-        <WhyChoose />
-        <HowWork />
-        <Team />
-        <Testimonial />
-        <Blogs />
-        <Contacts />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Routes>
+        <Route path="/clinic-app" element={<Home />}></Route>
+        <Route path="/clinic-app/about" element={<AboutPage />}></Route>
+      </Routes>
     </div>
   );
 }

@@ -28,8 +28,18 @@ function HowWork() {
               {Faq.map((item) => {
                 return (
                   <Accordion.Item eventKey={item.id} key={item.id}>
-                    <Accordion.Header><img src={item.url} alt="item-icon" className="img-fluid me-3" style={{width:"1.75rem"}}></img>{item.title}</Accordion.Header>
-                    <Accordion.Body className="about-text-color">{item.content}</Accordion.Body>
+                    <Accordion.Header>
+                      <img
+                        src={item.url}
+                        alt="item-icon"
+                        className="img-fluid me-3"
+                        style={{ width: "1.75rem" }}
+                      ></img>
+                      {item.title}
+                    </Accordion.Header>
+                    <Accordion.Body className="about-text-color">
+                      {item.content}
+                    </Accordion.Body>
                   </Accordion.Item>
                 );
               })}
